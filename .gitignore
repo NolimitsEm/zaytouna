@@ -1,0 +1,23 @@
+# Local configuration and secrets
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.production.example
+
+# Dependencies and local tool caches
+**/node_modules/
+.npm/
+**/.npm-cache/
+**/.browser-cache/
+
+# Runtime state, backups, and generated output
+backend/data/
+backend/xxxxxxxx/
+frontend_reconstructed/build/
+frontend_reconstructed/forensics/
+dist/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db

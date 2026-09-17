@@ -1,0 +1,37 @@
+{
+  "name": "zitouni-frontend-reconstructed",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/compare-browser.mjs",
+    "test:interactions": "node tests/interactions-browser.mjs",
+    "test:details": "node tests/detail-browser.mjs",
+    "test:integration": "node tests/backend-integration.mjs",
+    "test:lessons": "node tests/lesson-browser.mjs",
+    "test:save-failures": "node tools/review-save-failure.mjs",
+    "verify:fixes": "node tools/verify-fixes.mjs",
+    "verify:evidence": "node tools/inventory.mjs",
+    "forensics:inventory": "node tools/inventory.mjs",
+    "forensics:analyze": "node tools/analyze.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "vite": "7.3.1",
+    "playwright": "1.58.2",
+    "pngjs": "7.0.0",
+    "@babel/parser": "7.28.5",
+    "@babel/traverse": "7.28.5",
+    "@babel/generator": "7.28.5",
+    "@babel/types": "7.28.5",
+    "prettier": "3.6.2"
+  }
+}

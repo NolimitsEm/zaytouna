@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+.browser-cache/
+build/
+.env
+.env.*
+!.env.example
+*.log
